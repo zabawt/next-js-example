@@ -2,7 +2,7 @@ import { Author } from '../interfaces/author';
 import { Post } from '../interfaces/post';
 import { PostAggregate } from '../interfaces/postAggragate';
 
-export class NewsApi {
+export class Posts {
 
   async fetchPosts():Promise<PostAggregate[]> {
     const posts = await (await fetch('https://jsonplaceholder.typicode.com/posts')).json();

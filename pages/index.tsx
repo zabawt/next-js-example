@@ -18,7 +18,7 @@ const StyledHome = styled.div`
   margin: auto;
 `;
 
-const Home:NextPage<HomeProps> = (props:HomeProps) => {
+const Home: NextPage<HomeProps> = (props:HomeProps) => {
   return <StyledHome>
     {props.posts.map((post:Post)=><PostView key={post.id} {...post}/>)}
   </StyledHome>;
