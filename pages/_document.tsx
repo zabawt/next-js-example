@@ -1,9 +1,15 @@
 import React from 'react';
-import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document';
+import Document, {
+  DocumentContext,
+  Head,
+  Html,
+  Main,
+  NextScript,
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
-  render():JSX.Element {
+  render(): JSX.Element {
     return (
       <Html lang="en">
         <Head>

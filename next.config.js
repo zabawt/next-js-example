@@ -9,8 +9,8 @@ module.exports = (phase, { defaultConfig }) => {
 
   return {
     env: {
-      uri: 'https://jsonplaceholder.typicode.com'
+      uri: 'https://jsonplaceholder.typicode.com',
       /* config options for all phases except development here */
-    }
+    },
   };
 };
