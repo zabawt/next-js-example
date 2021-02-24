@@ -28,6 +28,7 @@ const Home: NextPage<HomeProps> = (props: HomeProps) => {
   return (
     <>
       <h2>{props.translations.welcome}</h2>
+      <img src="/next.png" width="200px"/>
       <StyledHome>
         {props.posts.map((post: Post) => (
           <PostView key={post.id} {...post} />
