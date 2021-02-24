@@ -7,13 +7,13 @@ const StyledPost = styled.article`
   margin: 12px 6px;
   box-shadow: 0px 1px 2.5px -1px rgba(0,0,0,0.3);
   border: 1px solid rgba(0,0,0,0.1);
-  font-family: 'Roboto', sans-serif;
   flex: 1;
   min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 120px;
+  background: white;
 `;
 
 const StyledTitle = styled.h3`
@@ -23,6 +23,7 @@ const StyledTitle = styled.h3`
   text-transform: uppercase;
   padding: 12px;
   margin: 0;
+  color: rgb(0, 110, 255);
 `;
 
 const StyledBody = styled.p`
@@ -32,6 +33,7 @@ const StyledBody = styled.p`
   padding: 12px;
   margin: 0;
   font-size: 13pt;
+  color: rgba(0,0,0,.7);
 `;
 
 export const PostView: React.FC<Post> = (props:Post) => {

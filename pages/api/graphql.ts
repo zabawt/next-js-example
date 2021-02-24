@@ -23,6 +23,10 @@ type User {
     email: String!
 }`;
 
+/**
+ * In real implementation for aggragating endpoint results
+ * we would use either query stitching or Apollo Federation
+ */
 const resolvers = {
   Query: {
     async posts() {
